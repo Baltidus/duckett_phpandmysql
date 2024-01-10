@@ -1,8 +1,8 @@
 <?php 
 $nutrition = [
-    'fat'   => 16,
-    'sugar' => 51,
-    'salt'  => 6.3,
+  'fat' => 16, 
+  'sugar' => 51,
+  'salt' => 6.3,
 ];
 ?>
 <!DOCTYPE html>

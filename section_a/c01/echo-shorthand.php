@@ -1,6 +1,6 @@
 <?php 
-$name      = 'Ivy';
-$favorites = ['Chocolate', 'Toffee', 'Fudge',];
+$name      = 'Joffrey';
+$favorites = ['Caramel', 'Toffee', 'Fudge',];
 ?>
 <!DOCTYPE html>
 <html>
