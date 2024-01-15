@@ -1,8 +1,9 @@
 <?php
-$day = 'Monday';
+$day = 'Wenesday';
 
 $offer = match($day) {
     'Monday'             => '20% off chocolates',
+    'Tuesday' => "70% of pepper",
     'Saturday', 'Sunday' => '20% off mints',
     default              => '10% off your entire order',
 }

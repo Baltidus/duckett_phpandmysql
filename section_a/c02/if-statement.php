@@ -1,6 +1,6 @@
 <?php 
-$name     = 'Ivy';
-$greeting = 'Hello';
+$name     = '';
+$greeting = 'Hello new customer';
 
 if ($name !== '') {
     $greeting = 'Welcome back, ' . $name;

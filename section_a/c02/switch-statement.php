@@ -1,5 +1,5 @@
 <?php
-$day = 'Monday';
+$day = 'Wenesday';
 
 switch ($day) {
     case 'Monday':
@@ -8,6 +8,9 @@ switch ($day) {
     case 'Tuesday':
         $offer = '20% off mints';
         break;
+    case 'Wenesday' :
+      $offer = '70% off pepper';
+      break;
     default:
         $offer = 'Buy three packs, get one free';
 }

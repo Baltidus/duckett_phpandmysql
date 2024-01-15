@@ -1,10 +1,10 @@
 <?php 
-$stock = 5;
+$stock = -0;
 
 if ($stock > 0) {
     $message = 'In stock';
 } else {
-    $message = 'Sold out';
+    $message = 'Available soon';
 }
 ?>
 <!DOCTYPE html>

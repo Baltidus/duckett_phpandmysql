@@ -1,6 +1,6 @@
 <?php
 $counter = 1;
-$packs   = 5;
+$packs   = 10;
 $price   = 1.99;
 ?>
 <!DOCTYPE html>
