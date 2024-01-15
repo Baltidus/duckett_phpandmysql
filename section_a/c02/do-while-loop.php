@@ -18,7 +18,7 @@ $price = 2.99;
         echo ' packs cost $';
         echo $price * $packs;
         echo '<br>';
-        // $packs--;
+        $packs--;
     } while ($packs >= 0);
     ?>
     </p>

@@ -12,7 +12,7 @@ $price = 1.99;
     <h2>Prices for Large Orders</h2>
     <p>
       <?php
-      for ($i = 10; $i <= 100; $i = $i + 10) {
+      for ($i = 10; $i <= 200; $i += 10) {
           echo $i;
           echo ' packs cost $';
           echo $price * $i;
