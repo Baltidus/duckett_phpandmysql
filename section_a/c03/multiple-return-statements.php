@@ -1,15 +1,16 @@
 <?php
-$stock = 25;
-
+$stock = 32;
 function get_stock_message($stock)
 {
+    $message_updated_from_stock = 'No Stock';
     if ($stock >= 10) {
-        return 'Good availability';
+        $message_updated_from_stock = "Good availability";
+        return $message_updated_from_stock;
     }
     if ($stock > 0 && $stock < 10) {
-        return 'Low stock';
+        $message_updated_from_stock = "Low stock";
     }
-    return 'Out of stock';
+    return $message_updated_from_stock;
 }
 ?>
 <!DOCTYPE html>

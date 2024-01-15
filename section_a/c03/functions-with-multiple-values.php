@@ -4,6 +4,7 @@ $rates = [
     'uk' => 0.81,
     'eu' => 0.93,
     'jp' => 113.21,
+    'aud' => 1.32,
 ];
 
 function calculate_prices($usd, $exchange_rates)
@@ -12,6 +13,7 @@ function calculate_prices($usd, $exchange_rates)
         'pound' => $usd * $exchange_rates['uk'],
         'euro'  => $usd * $exchange_rates['eu'],
         'yen'   => $usd * $exchange_rates['jp'],
+        'aud'   => $usd * $exchange_rates['aud'],
     ];
     return $prices;
 }
@@ -30,6 +32,7 @@ $global_prices = calculate_prices($us_price, $rates);
     <p>US $<?= $us_price ?></p>
     <p>(UK &pound; <?= $global_prices['pound'] ?> | 
         EU &euro;  <?= $global_prices['euro']  ?> | 
+        AUD &dollar;;  <?= $global_prices['aud']  ?> | 
         JP &yen;   <?= $global_prices['yen'] ?>)</p>
   </body>
 </html>

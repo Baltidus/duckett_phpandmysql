@@ -18,5 +18,6 @@ function calculate_total($price, $quantity)
     <p>Mints:  $<?= calculate_total(2, 5) ?></p>
     <p>Toffee: $<?= calculate_total(3, 5) ?></p>
     <p>Fudge:  $<?= calculate_total(5, 4) ?></p>
+    <p>Bubble-gum:  $<?= calculate_total(1.50, 4) ?></p>
   </body>
 </html>

@@ -1,13 +1,15 @@
 <?php
+$brandname = "The Candy Store"; 
+
 function create_logo()
 {
     return '<img src="img/logo.png" alt="Logo">';
 }
 
-function create_copyright_notice()
+function create_copyright_notice($brand)
 {
     $year    = date('Y');
-    $message = '&copy; ' . $year;
+    $message = $brand . ' &copy; ' . $year;
     return $message;
 }
 ?>
@@ -26,7 +28,7 @@ function create_copyright_notice()
     </article>
     <footer>
       <?= create_logo() ?>
-      <?= create_copyright_notice() ?>
+      <?= create_copyright_notice($brandname) ?>
     </footer>
   </body>
 </html>

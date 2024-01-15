@@ -1,10 +1,10 @@
 <?php
-$tax = '20';
+$tax = '25';
 
 function calculate_total($price, $quantity)
 {
     $cost  = $price * $quantity;
-    $tax   = $cost  * (20 / 100);
+    $tax   = $cost  * (25 / 100);
     $total = $cost  + $tax;
     return $total;
 }

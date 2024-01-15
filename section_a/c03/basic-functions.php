@@ -3,7 +3,9 @@ function write_logo()
 {
     echo '<img src="img/logo.png" alt="Logo">';
 }
-
+function write_brandname() {
+    echo 'The Candy Store';
+}
 function write_copyright_notice()
 {
     $year = date('Y');
@@ -26,6 +28,7 @@ function write_copyright_notice()
     <footer>
       <?php write_logo() ?>
       <?php write_copyright_notice() ?>
+      <?= write_brandname() ?>
     </footer>
   </body>
 </html>
