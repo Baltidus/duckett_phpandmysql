@@ -10,5 +10,7 @@
       <a href="index.php">Home</a> | 
       <a href="candy.php">Candy</a> | 
       <a href="about.php">About</a> | 
-      <a href="contact.php">Contact</a>
+      <a href="contact.php">Contact</a> |
+      <a class="newdeals" href="currentdeal.php">NEW DEALS !</a>
+
     </nav>

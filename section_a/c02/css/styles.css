@@ -66,6 +66,7 @@ a {
   text-decoration: none;
 }
 
+
 nav {
   padding: 0.5em;
   background-color: #730720;
@@ -77,6 +78,9 @@ nav a {
 }
 nav a:hover {
   color: #fff;
+}
+.newdeals{
+  color: orange;
 }
  
 .button {
@@ -120,3 +124,4 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
