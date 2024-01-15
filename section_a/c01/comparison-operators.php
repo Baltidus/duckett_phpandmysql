@@ -1,8 +1,15 @@
 <?php 
 $item    = 'Chocolate';
-$stock   = 5;
+$stock   = 1;
 $wanted  = 8;
 $can_buy = ($wanted <= $stock);
+$strcan_buy = (string)$can_buy;
+$wannabuysome = "Test le";
+$test = [
+  1 => 'yes',
+  "" => 'no',
+];
+$wannabuysome = $test[$strcan_buy];
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,6 +23,6 @@ $can_buy = ($wanted <= $stock);
     <p>Item:    <?= $item ?></p>
     <p>Stock:   <?= $stock ?></p>
     <p>Wanted:  <?= $wanted ?></p>
-    <p>Can buy: <?= $can_buy ?></p>
+    <p>Can buy: <?= $wannabuysome ?></p>
   </body>
 </html>
