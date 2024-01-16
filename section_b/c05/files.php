@@ -1,5 +1,5 @@
 <?php
-$path = 'img/logo.png';
+$path = 'img/nologo.png';
 ?>
 <?php include 'includes/header.php'; ?>
 

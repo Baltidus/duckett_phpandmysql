@@ -1,5 +1,5 @@
 <?php
-$text = '/images/uploads/';
+$text = ' /images/uploads/ ';
 ?>
 <?php include 'includes/header.php'; ?>
 <p>

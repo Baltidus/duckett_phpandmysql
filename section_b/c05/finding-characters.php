@@ -1,5 +1,5 @@
 <?php
-$text = 'Home sweet home';
+$text = 'Home and family';
 ?>
 <?php include 'includes/header.php'; ?>
 <p>
@@ -16,6 +16,8 @@ $text = 'Home sweet home';
   <b>Text after first match (not case-sensitive):</b>
   <?= stristr($text, 'ho') ?><br>
   <b>Text between two positions:</b>
-  <?= substr($text, 5, 5) ?><br>
+  <?= substr($text, 5, 3) ?><br>
+  <b> Checks if a substring is found: </b>
+  <?= str_contains($text, 'm')?><br>
 </p>
 <?php include 'includes/footer.php'; ?>

@@ -3,7 +3,7 @@
 $order = ['notebook', 'pencil', 'eraser',];
 array_unshift($order, 'scissors'); // Add to start
 array_pop($order);                 // Remove last
-$items = implode(', ', $order);    // Convert to string
+$items = implode(' / ', $order);    // Convert to string
 
 // Array of classes
 $classes = ['Patchwork' => 'April 12th',

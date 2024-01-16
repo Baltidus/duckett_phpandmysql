@@ -23,7 +23,7 @@ $user_object = new User('Ivy', 24, true);
 ?>
 <?php include 'includes/header.php' ?>
 
-  <p>Scalar: <?php var_dump($username); ?></p>
+  <pre>Scalar: <?php var_dump($username); ?></pre>
   <p>Array:  <?php var_dump($user_array); ?></p>
   <p>Object: <?php var_dump($user_object); ?></p>
 

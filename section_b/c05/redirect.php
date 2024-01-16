@@ -1,5 +1,5 @@
 <?php
-$logged_in = true;
+$logged_in = false;
 
 if ($logged_in == false) {
     header('Location: login.php');

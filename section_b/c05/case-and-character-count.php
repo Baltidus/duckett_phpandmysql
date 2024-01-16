@@ -1,5 +1,5 @@
 <?php
-$text = 'Home sweet home';
+$text = 'PHP & MySQL';
 ?>
 <?php include 'includes/header.php'; ?>
 

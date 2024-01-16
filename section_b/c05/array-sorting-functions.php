@@ -9,7 +9,7 @@ $items = implode(', ', $order);  // Convert to text
 $classes = ['Patchwork' => 'April 12th',
             'Knitting'  => 'May 4th',
             'Origami'   => 'June 8th',];
-ksort($classes);                 // Sort by key
+krsort($classes);                 // Sort by key
 ?>
 <?php include 'includes/header.php'; ?>
 
