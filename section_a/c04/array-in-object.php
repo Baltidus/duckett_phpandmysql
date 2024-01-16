@@ -32,14 +32,21 @@ class Account {
 }
 
 //Create an array to store in the property
-$numbers = ['account_number' => 12345678,
-            'routing_number' => 987654321,];
+$numbers = ['account_number' => (567890000),
+            'routing_number' => 876540000,];
+$numbers_two = ['account_number' => (326632663266),
+                'routing_number' => 111222333,];
 
 //Create an instance of the class and set properties
 $account = new Account($numbers, 'Savings', 10.00);
+$account_two = new Account($numbers_two, 'Checkings', 200);
+
 ?>
 <?php include 'includes/header.php'; ?>
 <h2><?= $account->type ?> account</h2>
 Account <?= $account->number['account_number'] ?><br>
-Routing <?= $account->number['routing_number'] ?>
+Routing <?= $account->number['routing_number'] ?><br>
+<br>
+Account <?= $account_two->number['account_number'] ?><br>
+Routing <?= $account_two->number['routing_number'] ?>
 <?php include 'includes/footer.php'; ?>

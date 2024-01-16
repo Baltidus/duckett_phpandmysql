@@ -27,6 +27,7 @@ class Account
     }
 }
 
+$highInterest = new Account(32323203, 'High Interests', 2000);
 $checking = new Account(43161176, 'Checking', 32.00);
 $savings  = new Account(20148896, 'Savings', 756.00);
 ?>
@@ -38,21 +39,25 @@ $savings  = new Account(20148896, 'Savings', 756.00);
     <th>Date</th>
     <th><?= $checking->type ?></th>
     <th><?= $savings->type  ?></th>
+    <th><?= $highInterest->type ?></th>
   </tr>
   <tr>
     <td>23 June</td>
     <td>$<?= $checking->balance ?></td>
     <td>$<?= $savings->balance  ?></td>
+    <td>$<?= $highInterest->balance ?></td>
   </tr>
   <tr>
     <td>24 June</td>
     <td>$<?= $checking->deposit(12.00)  ?></td>
     <td>$<?= $savings->withdraw(100.00) ?></td>
+    <td>$<?= $highInterest->withdraw(500)  ?></td>
   </tr>
   <tr>
     <td>25 June</td>
     <td>$<?= $checking->withdraw(5.00) ?></td>
     <td>$<?= $savings->deposit(300.00) ?></td>
+    <td>$<?= $highInterest->deposit(6000) ?></td>
   </tr>
 </table>
 <?php include 'includes/footer.php'; ?>
