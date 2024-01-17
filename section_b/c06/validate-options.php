@@ -1,12 +1,15 @@
 <?php
 $stars   = '';
 $message = '';
-$star_ratings = [1, 2, 3, 4, 5,];
+$star_ratings = ["nul", "pas si nul","moyen nul","bien nul","hyper nul",];
+$result = $_SERVER['REQUEST_METHOD'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stars   = $_POST['stars'] ?? '';
     $valid   = in_array($stars, $star_ratings);
     $message = $valid ? 'Thank you' : 'Select an option';
+    var_dump($_POST['stars']);
+
 }
 ?>
 <?php include 'includes/header.php'; ?>

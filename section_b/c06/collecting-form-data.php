@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<form action="collecting-form-data.php" method="POST">
+<form action="collecting-form-data.php" method="GET">
   <p>Name:     <input type="text" name="name"></p>
   <p>Age:      <input type="text" name="age"></p>
   <p>Email:    <input type="text" name="email"></p>
@@ -20,6 +20,6 @@
   <p><input type="submit" value="Save"></p>
 </form>
 
-<pre><?php var_dump($_POST); ?></pre>
+<pre><?php var_dump($_GET); ?></pre>
 
 <?php include 'includes/footer.php'; ?>

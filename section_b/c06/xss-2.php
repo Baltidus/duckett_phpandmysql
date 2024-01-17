@@ -8,5 +8,6 @@ $message = $_GET['msg'] ?? 'Click the link above';
 
 <h1>XSS Example</h1>
 <p><?= htmlspecialchars($message) ?></p>
+<?php include 'includes/functions.php' ?>
 
 <?php include 'includes/footer.php' ?>
