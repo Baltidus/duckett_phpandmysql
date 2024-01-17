@@ -1,7 +1,8 @@
 <?php
 $price    = 7;
-$quantity = 'five';
-$total    = $price * $quantity;
+$quantity = '5';
+$int_quantity = intval($quantity);
+$total    = $price * $int_quantity;
 ?>
 <h1>Basket</h1>
 Total: $<?= $total ?>
