@@ -1,5 +1,8 @@
 <?php
-$color   = $_COOKIE['color'] ?? null;       // Get data
+// $color   = $_COOKIE['color'] ?? null;       // Get data
+if (isset($_COOKIE['color'])) {
+  $color = $_COOKIE['color'];
+}
 $options = ['light', 'dark',];              // Options
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If posted
@@ -9,8 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // If posted
 }
 
 // If color is valid option, use it - otherwise use dark
-$scheme = (in_array($color, $options)) ? $color : 'dark';
 ?>
+<?= $scheme = (in_array($color, $options)) ? $color : 'dark'; ?>
 <?php include 'includes/header-style-switcher.php'; ?> 
   <form method="POST" action="cookie-preferences.php"> 
     Select color scheme:
@@ -18,6 +21,6 @@ $scheme = (in_array($color, $options)) ? $color : 'dark';
       <option value="dark">Dark</option>
       <option value="light">Light</option>
     </select><br>
-    <input type="submit" value="Save">
+    <input type="submit" value="OK">
   </form>
 <?php include 'includes/footer.php'; ?>
