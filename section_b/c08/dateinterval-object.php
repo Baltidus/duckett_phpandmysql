@@ -4,7 +4,7 @@ $event     = new DateTime('2025-12-31 20:30');
 $countdown = $today->diff($event);
 
 $earlybird = new DateTime();
-$interval  = new DateInterval('P1M');
+$interval  = new DateInterval('P3Y');
 $earlybird->add($interval);
 ?>
 <?php include 'includes/header.php'; ?>
@@ -13,7 +13,7 @@ $earlybird->add($interval);
 <?= $countdown->format('%y years %m months %d days') ?>
 </p>
 <p><b>50% off tickets bought by:</b><br>
-<?= $earlybird->format('D d M Y, g:i a') ?>
+<?= $earlybird->format('d M Y, g:i a') ?>
 </p>
 
 <?php include 'includes/footer.php'; ?>

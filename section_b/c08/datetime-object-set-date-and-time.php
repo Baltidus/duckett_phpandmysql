@@ -1,9 +1,9 @@
 <?php
 $start = new DateTime();
-$start->setDate(2021, 12, 01);
+
 $start->setTime(17, 30);
 $end = clone $start;
-$end->modify('+2 hours 15 min');
+$end->modify('+2 Weeks');
 ?>
 <?php include 'includes/header.php'; ?> 
 
