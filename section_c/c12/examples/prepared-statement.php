@@ -1,7 +1,7 @@
 <?php
 require '../cms/includes/database-connection.php';
 require '../cms/includes/functions.php';
-$id        = 1;
+$id        = 3;
 $sql       = "SELECT forename, surname 
                 FROM member 
                WHERE id = :id;";

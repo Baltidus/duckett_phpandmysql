@@ -3,7 +3,7 @@ require '../cms/includes/database-connection.php';
 require '../cms/includes/functions.php';
 $sql       = "SELECT forename, surname
                 FROM member
-               WHERE id = 1;";
+               WHERE id = 2;";
 $statement = $pdo->query($sql);
 $member    = $statement->fetch();
 ?>
