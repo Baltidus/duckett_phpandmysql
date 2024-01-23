@@ -1,7 +1,7 @@
 <?php
 require '../cms/includes/database-connection.php';
 require '../cms/includes/functions.php';
-$sql = "SELECT forename, surname
+$sql = "SELECT forename, surname, email
           FROM member;";
 $members = pdo($pdo, $sql)->fetchAll(); 
 ?>
@@ -18,6 +18,10 @@ $members = pdo($pdo, $sql)->fetchAll();
         <?= html_escape($member['forename']) ?>
         <?= html_escape($member['surname']) ?>
       <p>
+        <p>
+          <?= html_escape($member['email']) ?>
+        </p>
+        <hr />
     <?php } ?>
   </body>
 </html>

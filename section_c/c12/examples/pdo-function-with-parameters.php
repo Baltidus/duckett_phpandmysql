@@ -6,10 +6,10 @@ if (!$id) {
     include 'page-not-found.php';
 }
 
-$sql = "SELECT forename, surname
+$sql = "SELECT forename, surname, id
           FROM member
          WHERE id = :id;";
-$member = pdo($pdo, $sql, ['id' => $id])->fetch();
+$member = pdo($pdo, $sql, [$id])->fetch();
 
 if (!$member) {
     include 'page-not-found.php';
@@ -25,7 +25,8 @@ if (!$member) {
   <body>
     <p>
        <?= html_escape($member['forename']) ?>
-       <?= html_escape($member['surname']) ?>
+       <?= html_escape($member['surname']) ?> : 
+       <?= html_escape($member['id']) ?>
     </p>
   </body>
 </html>

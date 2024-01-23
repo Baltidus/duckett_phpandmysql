@@ -2,15 +2,15 @@
 require '../cms/includes/database-connection.php';
 require '../cms/includes/functions.php';
 
-$id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-if (!$id) {                            // If no id
-    include 'page-not-found.php';      // Page not found
-}
 
 $sql       = "SELECT forename, surname 
                 FROM member 
                WHERE id = :id;";       // SQL query
 $statement = $pdo->prepare($sql);      // Prepare
+$id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+if (!$id) {                            // If no id
+    include 'page-not-found.php';      // Page not found
+}
 $statement->execute([':id' => $id]);   // Execute
 $member    = $statement->fetch();      // Get data
 
