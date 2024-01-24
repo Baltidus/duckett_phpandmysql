@@ -15,10 +15,13 @@ $members   = $statement->fetchAll();      // Get data
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
+    <?= var_dump($members) ?>
     <?php foreach ($members as $member) { ?>
       <p>
         <?= html_escape($member->forename) ?>
         <?= html_escape($member->surname) ?>
+        <br>
+        <hr>
       </p>
     <?php } ?>
   </body>
