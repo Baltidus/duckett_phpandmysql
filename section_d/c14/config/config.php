@@ -12,11 +12,11 @@ define("DOC_ROOT", $parent_folder . '/public/');             // Document root
 // Database settings
 $type     = 'mysql';                 // Type of database
 $server   = 'localhost';             // Server the database is on
-$db       = 'phpbook-1';             // Name of the database
+$db       = 'php-book1';             // Name of the database
 $port     = '';                      // Port is usually 8889 in MAMP and 3306 in XAMPP
 $charset  = 'utf8mb4';               // UTF-8 encoding using 4 bytes of data per character
-$username = 'YOUR USERNAME';         // Enter YOUR username here
-$password = 'YOUR PASSWORD';         // Enter YOUR password here
+$username = 'duckett';         // Enter YOUR username here
+$password = 'Ereul9Aeng';         // Enter YOUR password here
 
 // DO NOT CHANGE NEXT LINE
 $dsn = "$type:host=$server;dbname=$db;port=$port;charset=$charset"; // Create DSN
